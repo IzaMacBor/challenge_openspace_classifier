@@ -27,7 +27,7 @@ class Table:
         for seat in self.seats:
          if seat.free:
               seat.set_occupant(name)
-              return (f"Seats if for {name}")
+              return (f"Seat if for {name}")
 
     def left_capacity(self):
          return sum(1 for seat in self.seats if seat.free) 
